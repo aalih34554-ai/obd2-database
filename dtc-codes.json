@@ -1,0 +1,746 @@
+{
+  "version": "1.0.0",
+  "description": "OBD2 Diagnostic Trouble Codes (DTC) Master Database",
+  "last_updated": "2026-09-15",
+  "categories": {
+    "P": {
+      "name": "Powertrain",
+      "description": "Engine, transmission, and emissions control systems"
+    },
+    "B": {
+      "name": "Body",
+      "description": "Body systems, power windows, lights, etc."
+    },
+    "C": {
+      "name": "Chassis",
+      "description": "Steering, suspension, and braking systems"
+    },
+    "U": {
+      "name": "Network",
+      "description": "Vehicle network communication"
+    }
+  },
+  "codes": {
+    "P0001": {
+      "code": "P0001",
+      "description": "Fuel Volume Regulator Control Circuit",
+      "category": "P",
+      "severity": "high",
+      "system": "Fuel Injection",
+      "causes": [
+        "Faulty fuel pressure regulator",
+        "Fuel pump electrical issue",
+        "Wiring problem in fuel pump circuit",
+        "PCM malfunction"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Engine may not start",
+        "Reduced fuel pressure"
+      ],
+      "solutions": [
+        "Test fuel pump voltage",
+        "Check fuel pressure regulator",
+        "Inspect wiring and connectors",
+        "Clear code after repair"
+      ]
+    },
+    "P0002": {
+      "code": "P0002",
+      "description": "Fuel Volume Regulator Control Circuit Low",
+      "category": "P",
+      "severity": "high",
+      "system": "Fuel Injection",
+      "causes": [
+        "Fuel pump failure",
+        "Faulty fuel regulator",
+        "Clogged fuel filter",
+        "Wiring issue"
+      ],
+      "symptoms": [
+        "Check engine light",
+        "Engine hesitation",
+        "Hard starting"
+      ],
+      "solutions": [
+        "Replace fuel filter",
+        "Test fuel pump pressure",
+        "Check electrical connections",
+        "Replace fuel pump if necessary"
+      ]
+    },
+    "P0003": {
+      "code": "P0003",
+      "description": "Fuel Volume Regulator Control Circuit High",
+      "category": "P",
+      "severity": "high",
+      "system": "Fuel Injection",
+      "causes": [
+        "Shorted fuel pump circuit",
+        "Faulty fuel pressure regulator",
+        "Engine control module issue"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Rough idle",
+        "Black smoke from exhaust"
+      ],
+      "solutions": [
+        "Check for short circuits",
+        "Test fuel regulator",
+        "Inspect PCM connections"
+      ]
+    },
+    "P0011": {
+      "code": "P0011",
+      "description": "Camshaft Position - Timing Over-Advanced or System Performance Bank A",
+      "category": "P",
+      "severity": "medium",
+      "system": "Valve Timing",
+      "causes": [
+        "Faulty camshaft timing solenoid",
+        "Timing chain wear",
+        "Oil viscosity issue",
+        "PCM malfunction"
+      ],
+      "symptoms": [
+        "Check engine light",
+        "Rough idle",
+        "Reduced engine power",
+        "Poor fuel economy"
+      ],
+      "solutions": [
+        "Check oil level and condition",
+        "Test solenoid operation",
+        "Inspect timing chain",
+        "Update PCM software if available"
+      ]
+    },
+    "P0100": {
+      "code": "P0100",
+      "description": "Mass Air Flow (MAF) Sensor Circuit",
+      "category": "P",
+      "severity": "medium",
+      "system": "Air Intake",
+      "causes": [
+        "Faulty MAF sensor",
+        "Dirty air filter",
+        "Air leak in intake",
+        "Wiring issue"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Rough idle",
+        "Hesitation during acceleration",
+        "Black exhaust smoke"
+      ],
+      "solutions": [
+        "Clean or replace air filter",
+        "Clean MAF sensor",
+        "Check for intake leaks",
+        "Test MAF sensor voltage"
+      ]
+    },
+    "P0101": {
+      "code": "P0101",
+      "description": "Mass Air Flow (MAF) Sensor Range/Performance",
+      "category": "P",
+      "severity": "medium",
+      "system": "Air Intake",
+      "causes": [
+        "Contaminated MAF sensor",
+        "Loose air intake hose",
+        "Intake leak",
+        "Faulty sensor"
+      ],
+      "symptoms": [
+        "Check engine light",
+        "Poor acceleration",
+        "Stalling",
+        "Poor fuel economy"
+      ],
+      "solutions": [
+        "Inspect intake for leaks",
+        "Clean MAF sensor with sensor cleaner",
+        "Check air filter",
+        "Replace MAF sensor if damaged"
+      ]
+    },
+    "P0102": {
+      "code": "P0102",
+      "description": "Mass Air Flow (MAF) Sensor Circuit Low",
+      "category": "P",
+      "severity": "medium",
+      "system": "Air Intake",
+      "causes": [
+        "Damaged MAF sensor",
+        "Dirty sensor element",
+        "Wiring short",
+        "PCM issue"
+      ],
+      "symptoms": [
+        "Check engine light",
+        "Stalling",
+        "Rough running",
+        "Engine won't start"
+      ],
+      "solutions": [
+        "Replace MAF sensor",
+        "Check wiring and connectors",
+        "Clean intake system"
+      ]
+    },
+    "P0103": {
+      "code": "P0103",
+      "description": "Mass Air Flow (MAF) Sensor Circuit High",
+      "category": "P",
+      "severity": "medium",
+      "system": "Air Intake",
+      "causes": [
+        "Air leak in intake manifold",
+        "Faulty MAF sensor",
+        "Wiring issue",
+        "Intake manifold gasket leak"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Rich running condition",
+        "Black exhaust smoke",
+        "Poor fuel economy"
+      ],
+      "solutions": [
+        "Inspect for air leaks",
+        "Check MAF sensor wiring",
+        "Replace MAF sensor",
+        "Check intake gaskets"
+      ]
+    },
+    "P0110": {
+      "code": "P0110",
+      "description": "Intake Air Temperature (IAT) Sensor Circuit",
+      "category": "P",
+      "severity": "low",
+      "system": "Air Intake",
+      "causes": [
+        "Faulty IAT sensor",
+        "Corroded sensor connector",
+        "Open or shorted wiring",
+        "PCM issue"
+      ],
+      "symptoms": [
+        "Check engine light",
+        "Rough idle",
+        "Poor fuel economy",
+        "Hard starting"
+      ],
+      "solutions": [
+        "Inspect sensor connector",
+        "Test sensor resistance",
+        "Check wiring integrity",
+        "Replace sensor if defective"
+      ]
+    },
+    "P0115": {
+      "code": "P0115",
+      "description": "Engine Coolant Temperature (ECT) Sensor Circuit",
+      "category": "P",
+      "severity": "medium",
+      "system": "Cooling System",
+      "causes": [
+        "Faulty coolant temperature sensor",
+        "Broken sensor connector",
+        "Open wiring",
+        "Short circuit in sensor circuit"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Rough idle at startup",
+        "Excessive fuel consumption",
+        "Overheating"
+      ],
+      "solutions": [
+        "Test ECT sensor resistance",
+        "Check wiring connections",
+        "Replace ECT sensor",
+        "Check coolant level"
+      ]
+    },
+    "P0128": {
+      "code": "P0128",
+      "description": "Coolant Thermostat (Coolant Temp Regulating Valve) Performance",
+      "category": "P",
+      "severity": "medium",
+      "system": "Cooling System",
+      "causes": [
+        "Faulty thermostat",
+        "Failed coolant temperature sensor",
+        "Wiring issue",
+        "Low coolant level"
+      ],
+      "symptoms": [
+        "Check engine light",
+        "Engine runs cool",
+        "Poor fuel economy",
+        "No heat from heater"
+      ],
+      "solutions": [
+        "Replace thermostat",
+        "Check coolant level and condition",
+        "Test temperature sensor",
+        "Check wiring"
+      ]
+    },
+    "P0171": {
+      "code": "P0171",
+      "description": "System Too Lean (Bank 1)",
+      "category": "P",
+      "severity": "high",
+      "system": "Fuel Injection",
+      "causes": [
+        "Faulty oxygen sensor",
+        "Vacuum leak",
+        "Fuel injector malfunction",
+        "Weak fuel pump pressure",
+        "Dirty fuel filter"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Engine hesitation",
+        "Hard starting",
+        "Reduced fuel economy"
+      ],
+      "solutions": [
+        "Check for vacuum leaks",
+        "Test oxygen sensor",
+        "Check fuel pressure",
+        "Clean or replace fuel injectors",
+        "Replace fuel filter"
+      ]
+    },
+    "P0172": {
+      "code": "P0172",
+      "description": "System Too Rich (Bank 1)",
+      "category": "P",
+      "severity": "high",
+      "system": "Fuel Injection",
+      "causes": [
+        "Faulty oxygen sensor",
+        "Fuel injector stuck open",
+        "Excessive fuel pressure",
+        "Bad air filter",
+        "Faulty MAF sensor"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Black smoke from exhaust",
+        "Rough idle",
+        "Poor fuel economy",
+        "Engine flooding"
+      ],
+      "solutions": [
+        "Replace air filter",
+        "Test oxygen sensor",
+        "Check fuel pressure regulator",
+        "Inspect fuel injectors",
+        "Clean MAF sensor"
+      ]
+    },
+    "P0201": {
+      "code": "P0201",
+      "description": "Injector Circuit Malfunction - Cylinder 1",
+      "category": "P",
+      "severity": "high",
+      "system": "Fuel Injection",
+      "causes": [
+        "Faulty fuel injector",
+        "Open injector wiring",
+        "Corroded connector",
+        "PCM malfunction"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Cylinder 1 misfire",
+        "Rough idle",
+        "Reduced engine power"
+      ],
+      "solutions": [
+        "Test injector resistance",
+        "Check wiring and connector",
+        "Replace faulty injector",
+        "Check PCM injector drivers"
+      ]
+    },
+    "P0300": {
+      "code": "P0300",
+      "description": "Random/Multiple Cylinder Misfire Detected",
+      "category": "P",
+      "severity": "high",
+      "system": "Ignition/Fuel",
+      "causes": [
+        "Worn spark plugs",
+        "Bad ignition coils",
+        "Fuel injector issues",
+        "Vacuum leak",
+        "Low fuel pressure",
+        "Faulty oxygen sensor"
+      ],
+      "symptoms": [
+        "Check engine light flashing",
+        "Rough idle",
+        "Hesitation during acceleration",
+        "Loss of power",
+        "Stumbling"
+      ],
+      "solutions": [
+        "Replace spark plugs",
+        "Test ignition coils",
+        "Check fuel pressure",
+        "Inspect for vacuum leaks",
+        "Clean fuel injectors"
+      ]
+    },
+    "P0400": {
+      "code": "P0400",
+      "description": "Exhaust Gas Recirculation (EGR) Flow",
+      "category": "P",
+      "severity": "medium",
+      "system": "Emissions",
+      "causes": [
+        "Faulty EGR valve",
+        "Clogged EGR passage",
+        "EGR sensor malfunction",
+        "Wiring issue",
+        "Vacuum leak"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Rough idle",
+        "Knocking during acceleration",
+        "Poor fuel economy"
+      ],
+      "solutions": [
+        "Clean EGR valve and passages",
+        "Test EGR sensor",
+        "Replace EGR valve if necessary",
+        "Check vacuum lines"
+      ]
+    },
+    "P0420": {
+      "code": "P0420",
+      "description": "Catalyst System Efficiency Below Threshold (Bank 1)",
+      "category": "P",
+      "severity": "medium",
+      "system": "Emissions",
+      "causes": [
+        "Faulty catalytic converter",
+        "Oxygen sensor malfunction",
+        "Engine misfire",
+        "Exhaust leak"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Rotten egg smell from exhaust",
+        "Reduced engine performance",
+        "Rattling from catalytic converter"
+      ],
+      "solutions": [
+        "Replace catalytic converter",
+        "Test oxygen sensors",
+        "Check for exhaust leaks",
+        "Fix engine misfire if present"
+      ]
+    },
+    "P0430": {
+      "code": "P0430",
+      "description": "Catalyst System Efficiency Below Threshold (Bank 2)",
+      "category": "P",
+      "severity": "medium",
+      "system": "Emissions",
+      "causes": [
+        "Faulty catalytic converter",
+        "Oxygen sensor malfunction",
+        "Engine misfire on Bank 2",
+        "Exhaust leak"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Rotten egg smell",
+        "Loss of power",
+        "Rattling noise"
+      ],
+      "solutions": [
+        "Replace catalytic converter",
+        "Test Bank 2 oxygen sensor",
+        "Fix Bank 2 misfire",
+        "Check for exhaust leak"
+      ]
+    },
+    "P0500": {
+      "code": "P0500",
+      "description": "Vehicle Speed Sensor Malfunction",
+      "category": "P",
+      "severity": "medium",
+      "system": "Transmission",
+      "causes": [
+        "Faulty speed sensor",
+        "Corroded sensor connector",
+        "Open or shorted wiring",
+        "Transmission issue"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Speedometer not working",
+        "Cruise control inoperative",
+        "Transmission shifting problems"
+      ],
+      "solutions": [
+        "Test speed sensor resistance",
+        "Check sensor wiring",
+        "Clean sensor connector",
+        "Replace sensor if defective"
+      ]
+    },
+    "P0601": {
+      "code": "P0601",
+      "description": "Internal Control Module Memory Checksum Error",
+      "category": "P",
+      "severity": "high",
+      "system": "Engine Control",
+      "causes": [
+        "PCM memory corruption",
+        "Low battery voltage",
+        "Faulty PCM",
+        "Interrupted reprogramming"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Multiple fault codes",
+        "Engine may not start",
+        "Poor engine performance"
+      ],
+      "solutions": [
+        "Check battery voltage",
+        "Try clearing codes",
+        "Reprogram PCM if possible",
+        "Replace PCM if necessary"
+      ]
+    },
+    "P0700": {
+      "code": "P0700",
+      "description": "Transmission Control System Malfunction",
+      "category": "P",
+      "severity": "high",
+      "system": "Transmission",
+      "causes": [
+        "Transmission fluid low or dirty",
+        "Faulty transmission solenoid",
+        "Wiring or connector issue",
+        "Transmission problem"
+      ],
+      "symptoms": [
+        "Check engine light and transmission light on",
+        "Transmission shifting erratically",
+        "Loss of power",
+        "Transmission overheating"
+      ],
+      "solutions": [
+        "Check transmission fluid level and condition",
+        "Test transmission solenoids",
+        "Check wiring and connectors",
+        "Have transmission diagnosed"
+      ]
+    },
+    "P0740": {
+      "code": "P0740",
+      "description": "Torque Converter Clutch Circuit",
+      "category": "P",
+      "severity": "medium",
+      "system": "Transmission",
+      "causes": [
+        "Faulty torque converter clutch solenoid",
+        "Transmission fluid issue",
+        "Wiring problem",
+        "Transmission malfunction"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Poor fuel economy",
+        "Transmission overheating",
+        "Hesitation during acceleration"
+      ],
+      "solutions": [
+        "Check transmission fluid",
+        "Test torque converter solenoid",
+        "Inspect wiring",
+        "Have transmission serviced"
+      ]
+    },
+    "P0800": {
+      "code": "P0800",
+      "description": "Transmission Control System Malfunction",
+      "category": "P",
+      "severity": "high",
+      "system": "Transmission",
+      "causes": [
+        "Faulty transmission control module",
+        "Wiring or connector problem",
+        "Transmission fluid issue",
+        "Solenoid malfunction"
+      ],
+      "symptoms": [
+        "Check engine light on",
+        "Transmission warning light",
+        "Shifting problems",
+        "Loss of gears"
+      ],
+      "solutions": [
+        "Check transmission fluid",
+        "Test transmission solenoids",
+        "Inspect wiring and connectors",
+        "Have TCM diagnosed"
+      ]
+    },
+    "P1000": {
+      "code": "P1000",
+      "description": "OBD System Not Ready",
+      "category": "P",
+      "severity": "low",
+      "system": "OBD",
+      "causes": [
+        "Recent engine start",
+        "Battery disconnect",
+        "Codes recently cleared"
+      ],
+      "symptoms": [
+        "Cannot pass emissions test",
+        "OBD not ready"
+      ],
+      "solutions": [
+        "Drive vehicle normally to complete OBD cycle",
+        "Typically takes 50-100 miles of driving"
+      ]
+    },
+    "P1101": {
+      "code": "P1101",
+      "description": "Intake Air Temperature Higher Than Expected",
+      "category": "P",
+      "severity": "low",
+      "system": "Air Intake",
+      "causes": [
+        "Engine running rich",
+        "Faulty IAT sensor",
+        "Hot air intake"
+      ],
+      "symptoms": [
+        "Check engine light",
+        "Poor fuel economy"
+      ],
+      "solutions": [
+        "Check IAT sensor",
+        "Inspect air intake routing",
+        "Clean air filter"
+      ]
+    },
+    "C1001": {
+      "code": "C1001",
+      "description": "ABS Wheel Speed Sensor Malfunction - Front Left",
+      "category": "C",
+      "severity": "medium",
+      "system": "ABS/Braking",
+      "causes": [
+        "Faulty wheel speed sensor",
+        "Corroded sensor connector",
+        "Wiring break or short",
+        "Reluctor ring damaged"
+      ],
+      "symptoms": [
+        "ABS light on",
+        "ABS inoperative",
+        "Traction control off"
+      ],
+      "solutions": [
+        "Inspect wheel speed sensor",
+        "Check wiring and connector",
+        "Replace sensor if damaged",
+        "Check reluctor ring"
+      ]
+    },
+    "C1002": {
+      "code": "C1002",
+      "description": "ABS Wheel Speed Sensor Malfunction - Front Right",
+      "category": "C",
+      "severity": "medium",
+      "system": "ABS/Braking",
+      "causes": [
+        "Faulty wheel speed sensor",
+        "Corroded connector",
+        "Broken wiring",
+        "Damaged reluctor ring"
+      ],
+      "symptoms": [
+        "ABS warning light",
+        "ABS system disabled",
+        "Traction control light on"
+      ],
+      "solutions": [
+        "Inspect wheel speed sensor",
+        "Check electrical connections",
+        "Replace defective sensor",
+        "Inspect reluctor ring"
+      ]
+    },
+    "U0100": {
+      "code": "U0100",
+      "description": "Lost Communication with ECM/PCM",
+      "category": "U",
+      "severity": "high",
+      "system": "Network Communication",
+      "causes": [
+        "Faulty ECM/PCM",
+        "Wiring or connector problem",
+        "Battery voltage issue",
+        "CAN bus malfunction"
+      ],
+      "symptoms": [
+        "Multiple warning lights",
+        "Engine may not start",
+        "Multiple fault codes"
+      ],
+      "solutions": [
+        "Check battery voltage",
+        "Inspect ECM/PCM connectors",
+        "Check CAN bus wiring",
+        "Replace ECM if necessary"
+      ]
+    },
+    "U0101": {
+      "code": "U0101",
+      "description": "Lost Communication with TCM",
+      "category": "U",
+      "severity": "high",
+      "system": "Network Communication",
+      "causes": [
+        "Faulty transmission control module",
+        "Communication wiring issue",
+        "Battery voltage low",
+        "CAN bus problem"
+      ],
+      "symptoms": [
+        "Transmission warning light",
+        "No gear engagement",
+        "Multiple fault codes"
+      ],
+      "solutions": [
+        "Check battery voltage",
+        "Inspect TCM wiring",
+        "Check CAN bus lines",
+        "Replace TCM if defective"
+      ]
+    }
+  },
+  "severity_levels": {
+    "low": "Can be driven, repair soon",
+    "medium": "Reduce speed, schedule repair",
+    "high": "Do not drive, immediate repair needed"
+  }
+}
